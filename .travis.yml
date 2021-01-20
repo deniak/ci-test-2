@@ -1,0 +1,3 @@
+language: bash
+script:
+  - curl https://labs.w3.org/echidna/api/version-specberus

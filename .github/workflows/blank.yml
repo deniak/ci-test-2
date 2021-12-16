@@ -1,9 +1,7 @@
 
 name: test
-on:
-  push:
-    branches:
-      - master
+on: [push, pull_request_target]
+
 jobs:
   publish:
     runs-on: ubuntu-latest

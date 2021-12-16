@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Notify failure
         uses: rectalogic/notify-irc@v1
-        if: failure() && github.event.pull_request.draft == false
+        if: github.event.pull_request.draft == false
         with:
           server: "irc.w3.org"
           port: 6679

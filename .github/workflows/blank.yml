@@ -1,5 +1,5 @@
 
-name: Echidna
+name: test
 on:
   push:
     branches:
@@ -8,10 +8,14 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: request to Echidna
-        run: curl https://labs.w3.org/echidna/api/request --data "url=$URL" --data "decision=$DECISION" --data "token=$TOKEN"
-        env:
-          URL: "https://w3c.github.io/manifest/ECHIDNA"
-          DECISION: "https://www.w3.org/"
-          TOKEN: "${{secrets.TOKEN}}"
+      - name: Notify failure
+        uses: rectalogic/notify-irc@v1
+        if: failure() && github.event.pull_request.draft == false
+        with:
+          server: "irc.w3.org"
+          port: 6679
+          channel: "#infobot"
+          nickname: gh-action-notifier
+          tls: true
+          message: |
+            fail

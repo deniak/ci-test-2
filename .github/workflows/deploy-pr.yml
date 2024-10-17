@@ -12,9 +12,8 @@ jobs:
       - name: Checkout source Git branch
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0
           ref: ${{github.event.pull_request.head.ref}}
-          repository: ${{github.event.pull_request.head.repo.full_name}}
+          persist-credentials: false
 
       - name: Upload to cdn.w3.org bucket
         if: success()

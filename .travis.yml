@@ -1,3 +1,0 @@
-language: bash
-script:
-  - echo `curl https://labs.w3.org/echidna/api/version-specberus`

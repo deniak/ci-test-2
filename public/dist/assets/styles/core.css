@@ -39,7 +39,7 @@ See: https://brandcolors.net/
   font-display: fallback;
   font-family: "Noto Sans";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 401;
   src: url("../fonts/notosans/notosans-regular.woff2") format("woff2"), url("../fonts/notosans/notosans-regular.woff") format("woff");
 }
 @font-face {

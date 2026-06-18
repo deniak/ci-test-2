@@ -1,0 +1,11 @@
+name: Analytics Tests
+ 
+on:
+  push:
+    paths:
+      - 'analytics/**/**'
+ 
+jobs:
+  test:
+    name: Run Tests
+    runs-on: ubuntu-latest

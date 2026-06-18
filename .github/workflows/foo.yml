@@ -3,7 +3,7 @@ name: Analytics Tests
 on:
   push:
     paths:
-      - 'analytics/**/**'
+      - 'analytics/*/**'
  
 jobs:
   test:

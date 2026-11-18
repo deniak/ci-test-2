@@ -5,7 +5,7 @@
 	}
 </style>
 <pre class='metadata'>
-Title: Animation Triggers
+Title: Animation Triggers test
 Group: CSSWG
 Status: ED
 Prepare for TR: no

@@ -4,7 +4,7 @@
         "type": "respec"
     },
     {
-        "src_file": "test.bs",
+        "src_file": "foo.bs",
         "type": "bikeshed"
     }
 ]

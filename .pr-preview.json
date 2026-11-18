@@ -1,4 +1,10 @@
-{
-    "src_file": "test.html",
-    "type": "respec"
-}
+[
+    {
+        "src_file": "test.html",
+        "type": "respec"
+    },
+    {
+        "src_file": "test.bs",
+        "type": "bikeshed"
+    }
+]
